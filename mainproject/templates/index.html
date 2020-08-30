@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Wake Up</title>
+
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %} 
+
+        <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">  
+        <link href="{% static 'css/bootstrap-theme.min.css'%}" rel="stylesheet">  
+        <link href="{% static 'css/fontAwesome.css'%}" rel="stylesheet">  
+        <link href="{% static 'css/light-box.css'%}" rel="stylesheet">  
+        <link href="{% static 'css/owl-carousel.css'%}" rel="stylesheet">  
+        <link href="{% static 'css/templatemo-style.css'%}" rel="stylesheet">  
+        <link href="{% static 'assets/css/bootstrap.min.css'%}" rel="stylesheet">  
+        <link href="{% static 'assets/css/bootstrap.min.css'%}" rel="stylesheet">  
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+
+
+
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#featured">Libraries used</a></li>
+                        <li><a href="#projects">Recent Projects</a></li>
+                        <li><a href="#video">Presentation</a></li>
+                        <li><a href="#blog">Blog Entries</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="#">Wake<em>UP</em></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#top">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#featured">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Project description
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#video">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                         Demo
+                        </a>
+                    </li>
+                <li>
+                        <a href="#projects">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Writings
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="#blog">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Blog Entires
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100004523052310"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/SanjayNK_tweet"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/sanjay-nandakumar-8278229b/"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            <div class="Modern-Slider content-section" id="top">
+                <!-- Item -->
+                <div class="item item-1">
+                    <div class="img-fill">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div>
+                          <h1><br>Wake UP</h1>
+                          <p>We are watching you !!!</p>
+                          <div class="white-button button">
+                            <form method="post" action="{% url 'output' %}">
+                                {% csrf_token %}
+                                <button class="btn"> &nbsp;&nbsp;&nbsp;Click here &nbsp;&nbsp;&nbsp;</button>
+                            </form>
+
+                            
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+                <!-- Item -->
+            
+                <!-- // Item -->
+                <!-- Item -->
+                <!-- // Item -->
+            </div>
+        </div>
+
+
+        <div class="page-content">
+            <section id="featured" class="content-section">
+                <div class="section-heading">
+                    <h1><br><em>Project description</em></h1>
+                    <p>This is a sample computer vision project is done for learning purpose for drowsiness detection in the human face. The front end is built using Django and the back end has been fed with various deep learning libraries such as OpenCV, Keras, and Pygame.</p>
+                </div>
+            </section>
+  
+            <section id="video" class="content-section">
+                <div class="row">
+                    <div class="col-md-12" >
+                        <div class="section-heading">
+                            <h1>Don't know how to use ? Here's the demo...</h1>
+                        </div>
+                        <div class="text-content">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="box-video">
+                            <div class="bg-video" style="background-image: url(https://unsplash.imgix.net/photo-1425036458755-dc303a604201?fit=crop&fm=jpg&q=75&w=1000);">
+                                <div class="bt-play">Play</div>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="100%" height="520" src="https://www.youtube.com/embed/j-_7Ub-Zkow?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="content-section">
+                <div class="section-heading">
+                    <h1><br><em>Writings</em></h1>
+                </div>
+                <div class="section-content">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="https://www.quora.com/profile/Sanjay-Kumar-563" data-lightbox="image"  target="_blank" ><img src= "{% static 'img/unnamed.png' %}" alt="image 1" width="100" height="150"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="https://medium.com/@sanjayjsw05" data-lightbox="image"  target="_blank" ><img src= "{% static 'img/medium.png' %}" alt="image 2" width="150" height="150"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="https://mathfables.blogspot.com/" data-lightbox="image"  target="_blank" ><img src="{% static 'img/Blogger.png' %}" alt="image 3"></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>            
+            </section>
+
+            <section id="blog" class="content-section">
+                <div class="section-heading">
+                    <h1><br><em>Blog Entries</em></h1>
+                </div>
+                <div class="section-content">
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                              <li><a href="#tab1" class="active">July 2020</a></li>
+                              <li><a href="#tab2">June 2020</a></li>
+                              <li><a href="#tab3">May 2020</a></li>
+                              <li><a href="#tab4">April 2020</a></li>
+                            </ul>
+                            <section id="first-tab-group" class="tabgroup">
+                                <div id="tab1">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_1.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>The enigma of Adjusted R Squared in regression analysis</h4>
+                                                    <span>25 July 2020</span>
+                                                    <p>Regression analysis is one of the most fundamental but commanding machine learning technique which is still predominant and made a way for many advanced kinds of research in the industry. Although there are a handful of advanced regression techniques already serving the purpose of predicting the continuous variables like bagging, boosting, support vectors, etc, linear regression principles remain as the first choice for most of the researchers if the data perpetuates a rectilinear fashion when represented on a multidimensional space. One of the most widely used evaluation metrics for the linear regression models is R squared aka Coefficient of determination. R squared is considered as a goodness of fit metric which in most of the time ranges around 0 to 1. Higher the value of R Squared examined as higher the coherence and predictive ability of the model.
+                                                            But as like most of the other evaluation metrics in machine learning, R Squared has also some restraints which make it to give imprecise indications sometimes by signifying an indigent model with an extremely high value. In this article, we will discuss the calculation procedure of R Squared, it’s limitations, and how these limitations can be overridden using an advanced evaluation metric called Adjusted R Squared.</p>
+                                                    <div class="accent-button button">
+                                                            <a href="https://towardsdatascience.com/the-enigma-of-adjusted-r-squared-57b01edac9f"  target="_blank" >Continue Reading</a>
+                                                        </div>
+                                                    <div class="accent-button button">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_2.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Time series analysis — Complete tutorial for beginners</h4>
+                                                    <span>16 July 2020</span>
+                                                    <p>Time series data is a collection of observations obtained through repeated measurements over time. As the world is becoming more technology-oriented, the collection of data dependent on time is becoming very easy. The proper analysis and forecast of this data can give more valuable and insightful results to enhance various domains. In recent days, the rise of data science and machine learning has conceptualized the subject of time series analysis with the latest technologies such that the process of predictive and inferential statistical modeling becoming less time and resource consuming. I have written this series of articles consisting of 4 parts so that it will be helpful for aspirants who have just started their learning process in this subject.</p>
+                                                    <div class="accent-button button">
+                                                            <a href="https://medium.com/@sanjayjsw05/time-series-analysis-complete-tutorial-for-beginners-part-1-58523000a0a3" target="_blank" >Continue Reading</a>
+                                                        </div>
+                                                    <div class="accent-button button">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_3.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Why lift has a bigger role than confidence in Association rules?</h4>
+                                                    <span>10 July 2020</span>
+                                                    <p>If you are a person who worked on Association rules, you would have probably gone through the same question in your mind — “Why lift has a bigger role than confidence in Association rules?” .In this article, I will explain the importance of lift and the intuitive demonstration of the same.
+                                                            The basic way to interpret association rules is Support and Confidence. Lift is derived from support and confidence for understanding the relative strength. I will give you a brief explanation with an example.</p>
+                                                
+                                                    <div class="accent-button button">
+                                                        <a href="https://medium.com/@sanjayjsw05/why-lift-has-bigger-role-than-confidence-in-association-rules-619324fc21ab" target="_blank" >Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab2">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_3.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Types of variables in machine learning</h4>
+                                                    <span>30 June 2020</span>
+                                                    <p>The understanding of types of variables is very important in the machine learning process to conduct and customize the data processing procedures efficiently. I have often seen some amount of confusion in understanding the grass-root meaning of some of these fixed statistical terminologies. In this article, I will explain briefly the meaning of each type of variable in machine learning with a real-life example.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://medium.com/@sanjayjsw05/types-of-variables-in-machine-learning-dea91dffdab7" target="_blank" >Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_1.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Intuitions behind probability distributions for machine learning beginners</h4>
+                                                    <span>24 June 2020</span>
+                                                    <p>All of the parametric tests expect data to be in a certain type of data distribution to apply the statistical tests. However, the shape of the distribution is determined by the nature of the experiment and data. More than understanding the complex mathematical derivations behind the formulae for demonstrating the theory behind probability distributions, it is important to understand the real-life intuitions which are more graspable as an initial step to study. In this article, I will explain the real-life scenario for each probability distribution.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://medium.com/@sanjayjsw05/intuitions-behind-probability-distributions-62235215dcd2" target="_blank" >Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_2.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Skewness and Kurtosis in data science</h4>
+                                                    <span>12 June 2020</span>
+                                                    <p>Data skewness is one of the important challenges that data scientists often face in real-time case studies. Apart from certain business scenarios, most of the real-time experiments need data in any predefined data distribution and that is very rare without undergoing a data cleaning process. In this article, we will discuss the terminologies and intuition behind the violation of symmetrical data distribution and how it can be evaluated using different mathematical metrics.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://medium.com/dev-genius/skewness-and-kurtosis-in-data-science-aa795ba4b453" target="_blank" >Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab3">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_2.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Degree of freedom</h4>
+                                                    <span>26 May 2020</span>
+                                                    <p>Degree of freedom is a popular and basic term usually used in hypothesis testing equations. Although the value of this term is fixed and available for all predefined testing mechanisms in tools like R, Python, SAS, etc, it is very important to understand the logic behind this to manipulate the hypothesis testing equations according to business needs. In this article, I will explain how the degree of freedom works in statistics.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://medium.com/@sanjayjsw05/degree-of-freedom-71a757944fb0" target="_blank" >Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_1.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Confusion Matrix — Are you confused?</h4>
+                                                    <span>22 May 2020</span>
+                                                    <p>The confusion matrix is one of the most widely used evaluation metrics in the world of data science and machine learning. Although the mathematics operated behind this technique is easy, the terminologies often make it difficult to comprehend. It requires a long article to start at a slow pace and explain the concepts from scratch to top. Here, I will write a series of articles to explain the working methodology of the confusion matrix. This article is written with a pre assumption that the reader is already aware of classification-based algorithms in machine learning.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://medium.com/@sanjayjsw05/confusion-matrix-are-you-confused-part-1-b6928bd7f15e"  target="_blank" >Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_3.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Confidence Interval and Confidence Level — Layman’s explanation</h4>
+                                                    <span>8 May 2020</span>
+                                                    <p>Confidence interval and Confidence level are two of the most important terms used in statistics. But I have seen many times students and professionals get confused with these terms. In this article, I will try to explain the meaning demonstrated by these terminologies.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://medium.com/@sanjayjsw05/confidence-interval-and-confidence-level-layman-explanation-572a20eaaf2d" target="_blank">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab4">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_1.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Sampling in statistical research </h4>
+                                                    <span>26 April 2020</span>
+                                                    <p>In my previous article, I briefly explained the significance of population and sample in data science and statistics. In this writing, I will discuss the types of sampling –methodology and their importance.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://medium.com/@sanjayjsw05/sampling-in-statistical-research-part-1-9321a23071cc" target="_blank">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>                                
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/blog_3.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Population and Sample in data science and statistics</h4>
+                                                    <span>24 April 2020</span>
+                                                    <p>The role of the population plays a major role in statistics and data science. Moreover, without drawing population and sample, the whole world of building statistics and data science might have gone with no existence.
+                                                            Data being the most foundational building block of all analysis, It is important to know how data are getting segregated, collected, and sampled before moving statistical analysis. In this article, I will discuss the population and sample from the perspective of statistics and data science.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://medium.com/@sanjayjsw05/population-and-sample-in-data-science-and-statistics-8a6d67e2f450" target="_blank" >Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="content-section">
+                <div id="map">
+                
+                	<!-- How to change your own map point
+                           1. Go to Google Maps
+                           2. Click on your location point
+                           3. Click "Share" and choose "Embed map" tab
+                           4. Copy only URL and paste it within the src="" field below
+                    -->
+                  
+                </div>
+                <div id="contact-content">
+                    <div class="section-heading">
+                        <h1><br><em>Contact Us</em></h1>
+                        
+                    </div>
+                    <div class="section-content">
+                        <form id="contact" action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                  </fieldset>
+                                </div>
+                                 <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                                  </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                             
+                    </div>
+                </div>
+            </section>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248755.7802116549!2d80.0689238262991!3d13.047822273065965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1598551431089!5m2!1sen!2sin" width="950" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"  width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <section class="footer">
+                <p>Copyright &copy; 2019
+                </p>
+            </section>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+</body>
+</html>
